@@ -1,0 +1,12 @@
+@tailwind base;
+
+@tailwind components;
+
+.a_parent {
+    @apply flex flex-1 items-center border border-orange-nav h-12 justify-center border-2;
+}
+
+.a_parent a{
+    @apply flex-1;
+}
+@tailwind utilities;

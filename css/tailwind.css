@@ -1,0 +1,25 @@
+@tailwind base;
+
+@tailwind components;
+
+.logo{
+    @apply flex justify-start  items-center;
+}
+
+.nav{
+    @apply text-orange-nav flex w-full justify-center text-lg font-bold items-center ;
+}
+
+.a_parent {
+    @apply flex flex-1 items-center border border-orange-nav h-12 justify-center border-2;
+}
+
+.a_parent a{
+    @apply flex-1 flex justify-center h-full items-center;
+}
+
+.items_ p{
+    @apply leading-6;
+}
+
+@tailwind utilities;

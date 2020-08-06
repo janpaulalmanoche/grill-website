@@ -1,0 +1,46 @@
+@tailwind base;
+
+@tailwind components;
+
+.logo{
+    @apply
+        w-1/3
+        flex 
+        justify-start 
+        px-10 
+        items-center;
+}
+
+.nav{
+    @apply 
+        text-orange-nav 
+        flex w-full 
+        justify-center 
+        text-lg 
+        font-bold 
+        items-center 
+        px-10;
+}
+
+.a_parent {
+    @apply 
+        flex 
+        flex-1 
+        items-center 
+        border 
+        border-orange-nav 
+        h-12 
+        justify-center 
+        border-2;
+}
+
+.a_parent a{
+    @apply 
+        flex-1 
+        flex 
+        justify-center 
+        h-full 
+        items-center;
+}
+
+@tailwind utilities;

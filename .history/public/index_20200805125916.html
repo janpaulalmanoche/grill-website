@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/tailwind.css" />
+    <title>Document</title>
+  </head>
+
+  <body class="bg-main">
+    <div class="w-full">
+      <nav class="sm:hidden bg-main lg:hidden xl:hidden md:hidden flex items-center justify-between flex-wrap  p-6">
+        <div class="flex items-center flex-shrink-0 text-white mr-6">
+          <img
+          class="w-20"
+          src="/img/logo.png"
+          alt=""
+        />
+          <!-- <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span> -->
+        </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-orange-nav border-orange-nav hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow">
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-orange-nav hover:text-white mr-4">
+              Home
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-orange-nav hover:text-white mr-4">
+              Menu
+            </a>
+            <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-orange-nav hover:text-white">
+              Specials
+            </a>
+          </div>
+          <div>
+            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-orange-nav border-orange-nav hover:border-transparent hover:text-white hover:bg-orange-nav mt-4 lg:mt-0">Reserve Now</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- nav for sm lg md xl -->
+     <nav class="h-32 hidden sm:flex lg:flex xl:flex md:flex">
+        <div
+          class=" logo md:w-1/3 lg:w-2/12 xl:w-2/12 sm:w-32 sm:px-2 sm:flex sm:justify-center"
+        >
+          <img
+            class="lg:w-24 lg:h-16 md:w-20 md:h-16 xl:w-24 sm:h-12"
+            src="/img/logo.png"
+            alt=""
+          />
+        </div>
+  
+        <div class="nav lg:px-10 md:px-10 sm:pr-4 hidden sm:flex md:flex lg:flex xl:flex">
+          <div class="a_parent">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#" class="text-main bg-orange-nav">Specials</a>
+            <a href="#">About</a>
+            <a href="#">Method</a>
+          </div>
+        </div>
+      </nav> 
+  
+      <section>
+        <div
+          class="h-dashboard bg-cover bg-center bg-red-700 flex"
+          style="background-image: url(/img/dashboard.png);"
+        >
+          <div class="dash_left flex-1 hidden lg:block">
+            <img src="/img/left.png" class="h-full object-cover" alt="" />
+          </div>
+  
+          <div
+            class="dash_main flex-1 lg:w-main bg-gray-dark font-sans flex justify-center items-center flex-col sm:w-full md:w-full"
+          >
+            <div
+              class="main_content flex flex-col items-center w-4/6 border-2 border-orange-nav sm:bg-black lg:w-11/12 md:bg-blue-500 lg:bg-red-500 xl:bg-white"
+            >
+              <h1
+                class="lg:text-5xl md:text-5xl sm:text-4xl font-bold bg-orange-nav w-full flex justify-center lg:pb-4 sm:pb-4 md:pb-4 xl:pb-4 pb-2 pt-2 text-main lg:text-center"
+              >
+                Opening Party
+              </h1>
+              <p
+                class="sm:text-3xl lg:text-3xl md:text-3xl xl:text-3xl text-sm font-bold text-white xl:pt-3 xl:pb-3 pb-3 lg:pt-10 lg:pb-10"
+              >
+                06/20/2020 - 7 P.M
+              </p>
+            </div>
+            <div>
+              <h1 class="xl:text-3xl md:text-2xl font-thin text-white pt-3 pb-3">
+                FOOD - MUSIC - FRIENDS - FUN
+              </h1>
+            </div>
+          </div>
+  
+          <div
+            class="dash_right flex-1 lg:justify-end lg:flex justify-end hidden lg:block xl:justify-end xl:flex"
+          >
+            <img src="/img/right.png" class="h-full object-cover" alt="" />
+          </div>
+        </div>
+      </section>
+  
+      <section
+        class="sm:h-110vh md:h-120vh md:pb-4 sm:pb-4 lg:h-120vh px-10 bg-cover bg-center mt-20 flex flex-col"
+        style="background-image: url('img/background_2.png');"
+      >
+        <div
+          class="menu flex justify-center font-sans text-white md:pt-6 lg:pt-6 sm:pt-4 md:pb-6 lg:pb-6 text-2xl font-bold tracking-wide"
+        >
+          <h1 class="text-4xl" style="text-shadow: 7px 11px 12px black;">Menu</h1>
+        </div>
+        <div class="menu_items flex flex-row w-full h-full">
+          <div class="menu_1 flex flex-1 flex-col">
+            <div class="menu_1_img flex-1 flex justify-center">
+              <img src="img/m_1.png" class="h-64 object-contain" alt="" />
+            </div>
+  
+            <div class="chicken flex-1  lg:pl-4 lg:pr-4 md:pr-4 md:pl-4 sm:pl-2 sm:pr-2 flex justify-center">
+              <div
+              class="w3-card-4 sm:w-full lg:w-9/12 md:w-full border-2 border-orange-nav sm:h-94% md:h-94% lg:h-97% xl:h-48 flex flex-col"
+              style="
+                box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+                  0 4px 20px 0 rgba(0, 0, 0, 0.19);
+              "
+            >
+                <header
+                  class="w3-container w3-blue bg-orange-nav font-bold h-12 pl-4"
+                >
+                  <h1 class="h-full flex items-center lg:text-lg md:text-lg">
+                    Chicken
+                  </h1>
+                </header>
+  
+                <div class="w3-container text-white h-full flex flex-col justify-center">
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Chicken with salad
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      6,00
+                    </p>
+                  </div>
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      The Gold Chicken
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      11,00
+                    </p>
+                  </div>
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Chicken whit sauce
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      11,00
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="chicken flex-1  lg:pl-4 lg:pr-4 md:pr-4 md:pl-4 sm:pl-2 sm:pr-2 flex justify-center">
+             <div
+              class="w3-card-4 sm:w-full lg:w-9/12 md:w-full border-2 border-orange-nav sm:h-94% md:h-94% lg:h-97%% xl:h-48 flex flex-col"
+              style="
+                box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+                  0 4px 20px 0 rgba(0, 0, 0, 0.19);
+              "
+            >
+                <header
+                  class="w3-container w3-blue bg-orange-nav font-bold h-12 pl-4"
+                >
+                  <h1 class="h-full flex items-center lg:text-lg md:text-lg">
+                    Slides
+                  </h1>
+                </header>
+  
+                <div class="w3-container text-white h-full flex flex-col justify-center">
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Potato Fries
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      6,00
+                    </p>
+                  </div>
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Mushrooms
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      11,00
+                    </p>
+                  </div>
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Roasted Brocolli
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      11,00
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="menu_2 flex flex-1 flex-col">
+            <div class="menu_2_img flex-1 justify-center flex">
+              <img src="img/m_3.png" class="h-64 object-contain" alt="" />
+            </div>
+  
+            <div class="chicken flex-1  lg:pl-4 lg:pr-4 md:pr-4 md:pl-4 sm:pl-2 sm:pr-2 flex justify-center">
+              <div
+              class="w3-card-4 sm:w-full lg:w-9/12 md:w-full border-2 border-orange-nav sm:h-94% md:h-94% lg:h-97%% xl:h-48 flex flex-col"
+              style="
+                box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+                  0 4px 20px 0 rgba(0, 0, 0, 0.19);
+              "
+            >
+                <header
+                  class="w3-container w3-blue bg-orange-nav font-bold h-12 pl-4"
+                >
+                  <h1 class="h-full flex items-center lg:text-lg md:text-lg">
+                    Beef
+                  </h1>
+                </header>
+  
+                <div class="w3-container text-white h-full flex flex-col justify-center">
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Prime Steak
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      6,00
+                    </p>
+                  </div>
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Steak Beef(700 gr.)
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      11,00
+                    </p>
+                  </div>
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Entrecôte
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      8,00
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="chicken flex-1  lg:pl-4 lg:pr-4 md:pr-4 md:pl-4 sm:pl-2 sm:pr-2 flex justify-center">
+              <div
+              class="w3-card-4 sm:w-full lg:w-9/12 md:w-full border-2 border-orange-nav sm:h-94% md:h-94% lg:h-97%% xl:h-48 flex flex-col"
+              style="
+                box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+                  0 4px 20px 0 rgba(0, 0, 0, 0.19);
+              "
+            >
+                <header
+                  class="w3-container w3-blue bg-orange-nav font-bold h-12 pl-4"
+                >
+                  <h1 class="h-full flex items-center lg:text-lg md:text-lg">
+                    Drinks
+                  </h1>
+                </header>
+  
+                <div class="w3-container text-white h-full flex flex-col justify-center">
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Soft Drink
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      2,50
+                    </p>
+                  </div>
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Beer
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      4,50
+                    </p>
+                  </div>
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Wine Glass
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      8,50
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="menu_3 flex flex-1 flex-col">
+            <div class="menu_3_img flex-1 justify-center flex">
+              <img src="img/m_2.png" class="h-64 object-contain" alt="" />
+            </div>
+  
+            <div class="chicken flex-1  lg:pl-4 lg:pr-4 md:pr-4 md:pl-4 sm:pl-2 sm:pr-2 flex justify-center">
+              <div
+              class="w3-card-4 sm:w-full lg:w-9/12 md:w-full border-2 border-orange-nav sm:h-94% md:h-94% lg:h-97%% xl:h-48 flex flex-col"
+              style="
+                box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+                  0 4px 20px 0 rgba(0, 0, 0, 0.19);
+              "
+            >
+                <header
+                  class="w3-container w3-blue bg-orange-nav font-bold h-12 pl-4"
+                >
+                  <h1 class="h-full flex items-center lg:text-lg md:text-lg">
+                    Pork
+                  </h1>
+                </header>
+  
+                <div class="w3-container text-white h-full flex flex-col justify-center">
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Pork Cheeks
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      6,50
+                    </p>
+                  </div>
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Iberian Special Cut
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      11,00
+                    </p>
+                  </div>
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Pork Chop
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      8,50
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="chicken flex-1  lg:pl-4 lg:pr-4 md:pr-4 md:pl-4 sm:pl-2 sm:pr-2 flex justify-center">
+              <div
+              class="w3-card-4 sm:w-full lg:w-9/12 md:w-full border-2 border-orange-nav sm:h-94% md:h-94% lg:h-97%% xl:h-48 flex flex-col"
+              style="
+                box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2),
+                  0 4px 20px 0 rgba(0, 0, 0, 0.19);
+              "
+            >
+                <header
+                  class="w3-container w3-blue bg-orange-nav font-bold h-12 pl-4"
+                >
+                  <h1 class="h-full flex items-center lg:text-lg md:text-lg">
+                    Desserts
+                  </h1>
+                </header>
+  
+                <div class="w3-container text-white h-full flex flex-col justify-center">
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-lg"
+                    >
+                      Cheesecake
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      6,50
+                    </p>
+                  </div>
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Tiramus
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      5,00
+                    </p>
+                  </div>
+                  <div class="item_1 flex w-full">
+                    <p
+                      class="lg:pl-4 xl:pl-4 md:pl-4 sm:pl-2 flex-1 flex sm:text-sm lg:text-base"
+                    >
+                      Chocolate Mousse
+                    </p>
+                    <p
+                      class="flex lg:w-10 md:w-10 xl:flex-1 sm:w-10 justify-end lg:pr-4 xl:pr-4 md:pr-4 sm:pr-1 lg:text-base"
+                    >
+                      8,50
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  <!-- section 3 -->
+      <section
+        class="discount h-screen bg-cover bg-center mt-20 flex"
+        style="background-image: url(img/background_2.png);"
+      >
+        <div class="discount_section_one w-1/2">
+          <img
+            src="img/discount_menu.png"
+            alt=""
+            class="discount_img h-full object-contain"
+          />
+        </div>
+  
+        <div
+          class="discount_section_two flex flex-1 justify-end lg:pr-20 md:pr-16 xl:pr-24 sm:pr-6 flex-col leading-10"
+        >
+          <div class="discount_info flex flex-1 flex-col justify-end items-end">
+            <h1 class="lg:text-5xl md:text-5xl xl:text-6xl sm:text-4xl text-orange-nav">Get a</h1>
+            <h1 class="lg:text-5xl md:text-4xl xl:text-6xl sm:text-4xl font-bold text-orange-nav text-right lg:pt-2 md:pt-2 xl:pt-5">25% discount</h1>
+            <h1 class="lg:text-5xl md:text-4xl xl:text-6xl sm:text-4xl text-orange-nav lg:pt-2  md:pt-2  xl:pt-5  text-right">on your next dinner</h1>
+  
+            <button
+              class="bg-orange-nav hover:bg-main hover:text-orange-nav lg:w-2/6 md:w-32 xl:w-2/6 text-main lg:text-xl md:text-lg xl:text-xl sm:text-sm font-bold py-2 px-4 rounded lg:mt-10 md:mt-10 xl:mt-10 sm:mt-4"
+            >
+              Click Here
+            </button>
+          </div>
+  
+          <div
+            class="discount_info flex flex-1 flex-col justify-center items-end"
+          >
+            <img src="img/logo2.png" alt="" class="logo_2 lg:h-20 md:h-20 xl:h-20 sm:h-16 object-contain" />
+            <h1
+              class="lg:text-4xl md:text-3xl xl:text-5xl sm:text-3xl text-orange-nav pt-2 sm:text-right"
+              style="text-shadow: 7px 11px 12px black;"
+            >
+              The Meat Experience
+            </h1>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

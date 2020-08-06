@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/tailwind.css">
+    <title>Document</title>
+</head>
+<!-- 
+tracking = letter spacing
+leading = line height
+max-w-md mx-auto make something response is set its witdh
+w = width
+mt = margn top
+text-4xl, sm,md.4sm. = text size
+bg-color-900 = color
+sm = small screen md md screen , large, extra
+sm:bg-green-500 md:bg-red-500 lg:bg-yello xl:bg-pink
+put custom setting on different screen size
+ -->
+
+<body class="bg-gray-300 ">
+    <div class="bg-gray-100 flex">
+        <div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-1/2 lg:max-w-full lg:py-24 lg:px-12">
+            <div>
+                <img class="h-10" src="img/download.png" alt="Workcation">
+                <img class="mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm:w-full lg:hidden sm:object-cover sm:object-center"
+                    src="img/beach-work.jpg" alt="Woman Workcatin on the beach">
+    
+                <h1 class="mt-6 text-2xl font-bold text-gray-900 leading-tight sm:text-4xl sm:mt-8 lg:text-3xl ">
+                    You can work from anywhere.
+                    <span class="text-indigo-500">
+    
+                        Take advantage of it.
+                    </span>
+                </h1>
+                <p class="mt-2 text-gray-600 sm:text-xl sm:mt-4">
+                    Workcation helps you find work-friendly rentals in beautiful locations so you can
+                    enjoy some nice weather even when your'e not on vacation
+                </p>
+    
+                <div class="mt-4">
+                    <a href="#"
+                        class="inline-block  rounded-lg bg-indigo-500 text-white px-5 py-3 shadow-lg uppercase tracking-wider font-semibold text-sm sm:text-xl">
+                        Book your escape
+                    </a>
+                </div>
+            </div>
+
+            <div class=" lg:block lg:w-1/2 lg:relative">
+                <img class="h-10" src="img/download.png" alt="Workcation">
+                <img class="absolute inset-0 h-full w-full object-cover object-center" 
+                src="img/beach-work.jpg" alt="Woman Workcatin on the beach">
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

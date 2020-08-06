@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+.nav a{
+    @apply flex flex-1 items-center border border-orange-nav h-12 justify-center border-4;
+}
+
+@tailwind utilities;

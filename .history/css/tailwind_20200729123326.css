@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+.nav a{
+    @apply text-orange-nav;
+}
+
+@tailwind utilities;

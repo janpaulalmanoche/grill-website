@@ -1,0 +1,9 @@
+@tailwind base;
+
+@tailwind components;
+
+.nav a{
+    @apply flex items-center;
+}
+
+@tailwind utilities;
